@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Currency Converter</title>
+
+    </head>
+
+    <body>
+        
+        <img id="site-logo" src="./assets/logo.gif" alt="currency-converter-logo">
+
+        <main>
+
+            <label>
+                Converter <b>de:</b>
+                <select id="select-one" class="select-box">
+                    <option value="real">Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para:</b>
+                <select id="select-two" class="select-box"> 
+                    <option value="dolar">Dólar Americano</option>
+                    <option value="euro">Euro</option>
+                    <option value="libra">Libra</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+            </label>
+
+            <label>
+                <b>Valor:</b>
+                <input id="value-to-convert" class="input-box" type="number" placeholder="R$ 0,00">
+            </label>
+
+            <button id="conversion-button">Converter</button>
+
+            <section>
+
+                <img id="currency-one" src="./assets/real.png" alt="icon-currency-one">
+                <p id="first-currency-name" class="name-txt">Real</p>
+                <p id="first-currency" class="value-txt">R$ 0,00</p>
+
+                <img src="./assets/vector.png" alt="arrow-icon">
+
+                <img id="currency-two" src="./assets/dolar.png" alt="icon-currency-two">
+                <p id="second-currency-name" class="name-txt">Dólar Americano</p>
+                <p id="second-currency" class="value-txt">US$ 0.00</p>
+
+            </section>
+
+        </main>
+
+    </body>
+    <script src="./script.js"></script>
+
+</html>
